@@ -16,6 +16,10 @@ export default function NavigationBar(props: { active: string }) {
       name: "FAQ",
       href: "/faqs/basics-and-overview",
     },
+    {
+      name: "Get License",
+      href: "/purchase",
+    },
   ];
 
   return (
