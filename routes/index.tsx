@@ -52,7 +52,13 @@ function HelloBar() {
 function Hero() {
   return (
     <>
-      <div class="flex justify-end items-center bg-blue-300">
+      <div class="flex justify-end items-center gap-4 bg-blue-300">
+        <a
+          href="/purchase"
+          class="border(1 black) inline-flex items-center h-10 px-4 m-4 text-black bg-transparent rounded hover:bg-white"
+        >
+          Get License
+        </a>
         <a
           href="/docs_v1/getting-start"
           class="border(1 black) inline-flex items-center h-10 px-4 m-4 text-black bg-transparent rounded hover:bg-white"
@@ -182,7 +188,22 @@ function GettingStarted() {
         </li>
       </ol>
 
-      <p class="text-gray-600">
+      <div class="flex flex-col sm:flex-row gap-4 items-center justify-center mt-8">
+        <a
+          href="/docs_v1/getting-start"
+          class="bg-blue-500 hover:bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold transition-colors"
+        >
+          View Documentation
+        </a>
+        <a
+          href="/purchase"
+          class="bg-green-500 hover:bg-green-600 text-white py-3 px-6 rounded-lg font-semibold transition-colors"
+        >
+          Get License
+        </a>
+      </div>
+
+      <p class="text-gray-600 text-center">
         Please see{" "}
         <a
           href="/docs_v1/getting-start"

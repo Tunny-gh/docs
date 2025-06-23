@@ -10,6 +10,7 @@ import * as $docs_v1_slug_ from "./routes/docs_v1/[...slug].tsx";
 import * as $faqs_slug_ from "./routes/faqs/[...slug].tsx";
 import * as $gfm_css from "./routes/gfm.css.ts";
 import * as $index from "./routes/index.tsx";
+import * as $purchase from "./routes/purchase.tsx";
 import * as $raw from "./routes/raw.ts";
 import * as $LemonDrop from "./islands/LemonDrop.tsx";
 import type { Manifest } from "$fresh/server.ts";
@@ -24,6 +25,7 @@ const manifest = {
     "./routes/faqs/[...slug].tsx": $faqs_slug_,
     "./routes/gfm.css.ts": $gfm_css,
     "./routes/index.tsx": $index,
+    "./routes/purchase.tsx": $purchase,
     "./routes/raw.ts": $raw,
   },
   islands: {
