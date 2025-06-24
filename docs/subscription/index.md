@@ -11,8 +11,8 @@ address.
 
 The subject of the email should be **“Tunny License Request”**.
 
-[Send request](mailto:support@hrntsm.com) or send e-mail to
-`support[at]hrntsm[dot]com`
+[Send request](mailto:license@hrntsm.com) or send e-mail to
+`license[at]hrntsm[dot]com`
 
 ## Difference of license version
 
