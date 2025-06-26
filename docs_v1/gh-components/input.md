@@ -1,5 +1,6 @@
 ---
-description:
+description: |
+  Introduction to the Tunny Value List component for categorical optimization in Grasshopper.
 ---
 
 ## Tunny Value List

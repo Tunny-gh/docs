@@ -1,5 +1,6 @@
 ---
-description:
+description: |
+  Introduction to Fish Print components for capturing and managing image artifacts in optimization.
 ---
 
 ## Fish Print by Capture

@@ -1,5 +1,6 @@
 ---
-description:
+description: |
+  Description of the main Tunny optimization components: Tunny Fishing and Bone Fish.
 ---
 
 ## Tunny Fishing

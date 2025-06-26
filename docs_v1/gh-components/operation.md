@@ -1,5 +1,6 @@
 ---
-description:
+description: |
+  Overview of Tunny's operation components including Fish Attribute, Fish Egg, and Fish deconstruction components.
 ---
 
 ## Construct Fish Attribute

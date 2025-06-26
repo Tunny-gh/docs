@@ -1,5 +1,6 @@
 ---
-description:
+description: |
+  Introduction to the Fish Market component for visualizing optimization results in the Rhino viewport.
 ---
 
 ## Fish Market

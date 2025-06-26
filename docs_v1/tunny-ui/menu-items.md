@@ -1,5 +1,6 @@
 ---
-description:
+description: |
+  Guide to accessing Tunny features through Grasshopper's menu system including help, tutorials, and dashboard access.
 ---
 
 <img width="100%" alt="image" src="/images/docs_v1/tunny-ui/menu-items.png">

@@ -1,6 +1,6 @@
 ---
 description: |
-  Tunny is Grasshopper's optimization component using Optuna, an open source hyperparameter auto-optimization framework.
+  Overview of sampling techniques available in Tunny, their characteristics, and supported optimization types.
 ---
 
 Tunny can utilize a number of sampling techniques.

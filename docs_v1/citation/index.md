@@ -1,5 +1,6 @@
 ---
-description: Citation
+description: |
+  Citation information for referencing Tunny in academic and professional work.
 ---
 
 If you want to quote Tunny, please use the following. Or check the Tunny page on

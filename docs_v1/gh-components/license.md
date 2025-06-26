@@ -1,5 +1,6 @@
 ---
-description:
+description: |
+  Description of the License component for checking Tunny license status in Grasshopper.
 ---
 
 ## License

@@ -1,5 +1,6 @@
 ---
-description:
+description: |
+  Overview of the four Tunny parameter components for data storage and internalization.
 ---
 
 ## Fish Print by Capture

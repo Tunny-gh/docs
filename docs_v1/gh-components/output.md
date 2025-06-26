@@ -1,8 +1,6 @@
 ---
 description: |
-  In this chapter of the Fresh documentation, you'll be introduced to the
-  framework. Create a new project, run it locally, edit and create pages, fetch
-  data, handle user interactions, and deploy it.
+  Overview of Tunny's output components including Fish, FishMarket, and result handling components.
 ---
 
 <img width="1449" alt="image" src="https://user-images.githubusercontent.com/23289252/190847961-98d4fb1b-aa11-4930-94a2-e66215ce270a.png">
