@@ -1,6 +1,6 @@
 ---
 description: |
-  This section is Tunny's Frequently Asked Questions
+  Frequently asked questions about Tunny's constraint handling, performance optimization, and trial failure management.
 ---
 
 ## Why are there trials that don't satisfy the constraints even though constraints were set?

@@ -1,6 +1,6 @@
 ---
 description: |
-  This section is Tunny's Frequently Asked Questions
+  Frequently asked questions covering Tunny basics including artifacts vs attributes, optimization method selection, result storage, and dashboard access.
 ---
 
 ## What's the difference between Artifacts and Attributes, since both add information to Trials?

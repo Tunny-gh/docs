@@ -1,6 +1,6 @@
 ---
 description: |
-  This section is Tunny's Frequently Asked Questions
+  Frequently asked questions about Tunny's optimization algorithms and methods including Gaussian Process, Wallacei compatibility, and sampling techniques.
 ---
 
 ## There are two Bayesian optimization methods using Gaussian Process - "GP Optuna" and "GP BoTorch". What are the differences between them?

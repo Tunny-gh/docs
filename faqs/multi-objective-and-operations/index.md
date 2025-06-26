@@ -1,6 +1,6 @@
 ---
 description: |
-  This section is Tunny's Frequently Asked Questions
+  Frequently asked questions about multi-objective optimization, initial generation boosting, and UI operation issues in Tunny.
 ---
 
 ## If the multi-objective optimization is not converging well, is there anything I can do to improve it?
