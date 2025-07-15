@@ -13,6 +13,7 @@ import * as $index from "./routes/index.tsx";
 import * as $purchase from "./routes/purchase.tsx";
 import * as $raw from "./routes/raw.ts";
 import * as $LemonDrop from "./islands/LemonDrop.tsx";
+import * as $PurchaseSection from "./islands/PurchaseSection.tsx";
 import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -30,6 +31,7 @@ const manifest = {
   },
   islands: {
     "./islands/LemonDrop.tsx": $LemonDrop,
+    "./islands/PurchaseSection.tsx": $PurchaseSection,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;
