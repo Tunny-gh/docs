@@ -12,38 +12,60 @@ export default function TermsModal(
 ) {
   const [termsContent, setTermsContent] = useState<string>("");
   const [isLoading, setIsLoading] = useState(false);
+  const [language, setLanguage] = useState<"en" | "ja">("en");
+
+  const loadTermsContent = (lang: "en" | "ja") => {
+    setIsLoading(true);
+    const filename = lang === "ja" ? "/terms/ja.md" : "/terms/en.md";
+    fetch(filename)
+      .then((response) => response.text())
+      .then((content) => {
+        setTermsContent(content);
+        setIsLoading(false);
+      })
+      .catch(() => {
+        setTermsContent(
+          lang === "ja"
+            ? "利用規約の読み込みに失敗しました。"
+            : "Failed to load terms of use.",
+        );
+        setIsLoading(false);
+      });
+  };
 
   useEffect(() => {
     if (isOpen) {
-      setIsLoading(true);
-      fetch("/TermsOfUse.md")
-        .then((response) => response.text())
-        .then((content) => {
-          setTermsContent(content);
-          setIsLoading(false);
-        })
-        .catch(() => {
-          setTermsContent("利用規約の読み込みに失敗しました。");
-          setIsLoading(false);
-        });
+      loadTermsContent(language);
     }
-  }, [isOpen]);
+  }, [isOpen, language]);
 
   if (!isOpen) return null;
 
   const renderMarkdown = (content: string) => {
     return content
-      .split('\n')
+      .split("\n")
       .map((line, index) => {
-        if (line.startsWith('# ')) {
-          return <h1 key={index} class="text-2xl font-bold mb-4 mt-6">{line.substring(2)}</h1>;
-        } else if (line.startsWith('## ')) {
-          return <h2 key={index} class="text-xl font-semibold mb-3 mt-5">{line.substring(3)}</h2>;
-        } else if (line.startsWith('### ')) {
-          return <h3 key={index} class="text-lg font-semibold mb-2 mt-4">{line.substring(4)}</h3>;
-        } else if (line.startsWith('- ')) {
+        if (line.startsWith("# ")) {
+          return (
+            <h1 key={index} class="text-2xl font-bold mb-4 mt-6">
+              {line.substring(2)}
+            </h1>
+          );
+        } else if (line.startsWith("## ")) {
+          return (
+            <h2 key={index} class="text-xl font-semibold mb-3 mt-5">
+              {line.substring(3)}
+            </h2>
+          );
+        } else if (line.startsWith("### ")) {
+          return (
+            <h3 key={index} class="text-lg font-semibold mb-2 mt-4">
+              {line.substring(4)}
+            </h3>
+          );
+        } else if (line.startsWith("- ")) {
           return <li key={index} class="ml-4 mb-1">{line.substring(2)}</li>;
-        } else if (line.trim() === '') {
+        } else if (line.trim() === "") {
           return <br key={index} />;
         } else {
           return <p key={index} class="mb-2">{line}</p>;
@@ -56,28 +78,56 @@ export default function TermsModal(
       <div class="bg-white rounded-lg max-w-4xl max-h-[80vh] w-full overflow-hidden">
         <div class="flex justify-between items-center p-6 border-b">
           <h2 class="text-2xl font-bold text-gray-900">
-            Terms of Use - {licenseType}
+            {language === "ja" ? "利用規約" : "Terms of Use"} - {licenseType}
           </h2>
-          <button
-            type="button"
-            onClick={onClose}
-            class="text-gray-400 hover:text-gray-600 text-2xl"
-          >
-            ×
-          </button>
+          <div class="flex items-center gap-4">
+            <div class="flex bg-gray-100 rounded-lg p-1">
+              <button
+                type="button"
+                onClick={() => setLanguage("en")}
+                class={`px-3 py-1 text-sm rounded-md transition-colors ${
+                  language === "en"
+                    ? "bg-white text-gray-900 shadow-sm"
+                    : "text-gray-600 hover:text-gray-900"
+                }`}
+              >
+                English
+              </button>
+              <button
+                type="button"
+                onClick={() => setLanguage("ja")}
+                class={`px-3 py-1 text-sm rounded-md transition-colors ${
+                  language === "ja"
+                    ? "bg-white text-gray-900 shadow-sm"
+                    : "text-gray-600 hover:text-gray-900"
+                }`}
+              >
+                日本語
+              </button>
+            </div>
+            <button
+              type="button"
+              onClick={onClose}
+              class="text-gray-400 hover:text-gray-600 text-2xl"
+            >
+              ×
+            </button>
+          </div>
         </div>
 
         <div class="p-6 overflow-y-auto max-h-[60vh]">
           <div class="prose prose-sm max-w-none">
-            {isLoading ? (
-              <div class="flex justify-center items-center py-8">
-                <div class="text-gray-500">Loading...</div>
-              </div>
-            ) : (
-              <div class="space-y-2">
-                {renderMarkdown(termsContent)}
-              </div>
-            )}
+            {isLoading
+              ? (
+                <div class="flex justify-center items-center py-8">
+                  <div class="text-gray-500">Loading...</div>
+                </div>
+              )
+              : (
+                <div class="space-y-2">
+                  {renderMarkdown(termsContent)}
+                </div>
+              )}
           </div>
         </div>
 
@@ -87,14 +137,16 @@ export default function TermsModal(
             onClick={onClose}
             class="px-6 py-2 text-gray-600 hover:text-gray-800 border border-gray-300 rounded-lg hover:bg-gray-100 transition-colors"
           >
-            Cancel
+            {language === "ja" ? "キャンセル" : "Cancel"}
           </button>
           <button
             type="button"
             onClick={onAccept}
             class="px-6 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-semibold transition-colors"
           >
-            Agree to Terms and Proceed to Purchase
+            {language === "ja"
+              ? "利用規約に同意して購入へ進む"
+              : "Agree to Terms and Proceed to Purchase"}
           </button>
         </div>
       </div>
