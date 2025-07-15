@@ -1,8 +1,10 @@
 import { useState } from "preact/hooks";
 import TermsModal from "../components/TermsModal.tsx";
+import PrivacyModal from "../components/PrivacyModal.tsx";
 
 export default function PurchaseSection() {
   const [isTermsModalOpen, setIsTermsModalOpen] = useState(false);
+  const [isPrivacyModalOpen, setIsPrivacyModalOpen] = useState(false);
   const [selectedLicense, setSelectedLicense] = useState<
     {
       type: string;
@@ -164,6 +166,14 @@ export default function PurchaseSection() {
               >
                 FAQ
               </a>
+              <span class="text-gray-400">|</span>
+              <button
+                type="button"
+                onClick={() => setIsPrivacyModalOpen(true)}
+                class="text-blue-600 hover:underline"
+              >
+                Privacy Policy
+              </button>
             </div>
           </div>
         </div>
@@ -174,6 +184,10 @@ export default function PurchaseSection() {
         onClose={handleTermsClose}
         onAccept={handleTermsAccept}
         licenseType={selectedLicense?.type || ""}
+      />
+      <PrivacyModal
+        isOpen={isPrivacyModalOpen}
+        onClose={() => setIsPrivacyModalOpen(false)}
       />
     </>
   );
