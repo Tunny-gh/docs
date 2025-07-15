@@ -85,14 +85,14 @@ function LicenseComparison() {
               <tr>
                 <td class="p-4 text-gray-700">Need License</td>
                 <td class="p-4 text-center">-</td>
-                <td class="p-4 text-center text-green-600">✓</td>
-                <td class="p-4 text-center text-green-600">✓</td>
+                <td class="p-4 text-center text-green-600 text-xl">🐟</td>
+                <td class="p-4 text-center text-green-600 text-xl">🐟</td>
               </tr>
               <tr>
                 <td class="p-4 text-gray-700">Need Subscription</td>
                 <td class="p-4 text-center">-</td>
                 <td class="p-4 text-center">-</td>
-                <td class="p-4 text-center text-green-600">✓</td>
+                <td class="p-4 text-center text-green-600 text-xl">🐟</td>
               </tr>
 
               <tr class="bg-gray-50">
@@ -102,27 +102,27 @@ function LicenseComparison() {
               </tr>
               <tr>
                 <td class="p-4 text-gray-700">TPE</td>
-                <td class="p-4 text-center text-green-600">✓</td>
-                <td class="p-4 text-center text-green-600">✓</td>
-                <td class="p-4 text-center text-green-600">✓</td>
+                <td class="p-4 text-center text-green-600 text-xl">🐟</td>
+                <td class="p-4 text-center text-green-600 text-xl">🐟</td>
+                <td class="p-4 text-center text-green-600 text-xl">🐟</td>
               </tr>
               <tr>
                 <td class="p-4 text-gray-700">cTPE</td>
                 <td class="p-4 text-center">-</td>
-                <td class="p-4 text-center text-green-600">✓</td>
-                <td class="p-4 text-center text-green-600">✓</td>
+                <td class="p-4 text-center text-green-600 text-xl">🐟</td>
+                <td class="p-4 text-center text-green-600 text-xl">🐟</td>
               </tr>
               <tr>
                 <td class="p-4 text-gray-700">GP: Optuna & BoTorch</td>
                 <td class="p-4 text-center">-</td>
-                <td class="p-4 text-center text-green-600">✓</td>
-                <td class="p-4 text-center text-green-600">✓</td>
+                <td class="p-4 text-center text-green-600 text-xl">🐟</td>
+                <td class="p-4 text-center text-green-600 text-xl">🐟</td>
               </tr>
               <tr>
                 <td class="p-4 text-gray-700">HEBO</td>
                 <td class="p-4 text-center">-</td>
-                <td class="p-4 text-center text-green-600">✓</td>
-                <td class="p-4 text-center text-green-600">✓</td>
+                <td class="p-4 text-center text-green-600 text-xl">🐟</td>
+                <td class="p-4 text-center text-green-600 text-xl">🐟</td>
               </tr>
 
               <tr class="bg-gray-50">
@@ -132,15 +132,15 @@ function LicenseComparison() {
               </tr>
               <tr>
                 <td class="p-4 text-gray-700">NSGA-II</td>
-                <td class="p-4 text-center text-green-600">✓</td>
-                <td class="p-4 text-center text-green-600">✓</td>
-                <td class="p-4 text-center text-green-600">✓</td>
+                <td class="p-4 text-center text-green-600 text-xl">🐟</td>
+                <td class="p-4 text-center text-green-600 text-xl">🐟</td>
+                <td class="p-4 text-center text-green-600 text-xl">🐟</td>
               </tr>
               <tr>
                 <td class="p-4 text-gray-700">NSGA-III, MOEA/D, DE</td>
                 <td class="p-4 text-center">-</td>
-                <td class="p-4 text-center text-green-600">✓</td>
-                <td class="p-4 text-center text-green-600">✓</td>
+                <td class="p-4 text-center text-green-600 text-xl">🐟</td>
+                <td class="p-4 text-center text-green-600 text-xl">🐟</td>
               </tr>
 
               <tr class="bg-gray-50">
@@ -151,20 +151,20 @@ function LicenseComparison() {
               <tr>
                 <td class="p-4 text-gray-700">CMA-ES & MO-CMA-ES</td>
                 <td class="p-4 text-center">-</td>
-                <td class="p-4 text-center text-green-600">✓</td>
-                <td class="p-4 text-center text-green-600">✓</td>
+                <td class="p-4 text-center text-green-600 text-xl">🐟</td>
+                <td class="p-4 text-center text-green-600 text-xl">🐟</td>
               </tr>
               <tr>
                 <td class="p-4 text-gray-700">QMC Sampling</td>
                 <td class="p-4 text-center">-</td>
-                <td class="p-4 text-center text-green-600">✓</td>
-                <td class="p-4 text-center text-green-600">✓</td>
+                <td class="p-4 text-center text-green-600 text-xl">🐟</td>
+                <td class="p-4 text-center text-green-600 text-xl">🐟</td>
               </tr>
               <tr>
                 <td class="p-4 text-gray-700">Preferential GP</td>
                 <td class="p-4 text-center">-</td>
-                <td class="p-4 text-center text-green-600">✓</td>
-                <td class="p-4 text-center text-green-600">✓</td>
+                <td class="p-4 text-center text-green-600 text-xl">🐟</td>
+                <td class="p-4 text-center text-green-600 text-xl">🐟</td>
               </tr>
 
               <tr class="bg-gray-50">
@@ -174,15 +174,15 @@ function LicenseComparison() {
               </tr>
               <tr>
                 <td class="p-4 text-gray-700">Forum Support</td>
-                <td class="p-4 text-center text-green-600">✓</td>
-                <td class="p-4 text-center text-green-600">✓</td>
-                <td class="p-4 text-center text-green-600">✓</td>
+                <td class="p-4 text-center text-green-600 text-xl">🐟</td>
+                <td class="p-4 text-center text-green-600 text-xl">🐟</td>
+                <td class="p-4 text-center text-green-600 text-xl">🐟</td>
               </tr>
               <tr>
                 <td class="p-4 text-gray-700">Email Support</td>
                 <td class="p-4 text-center">-</td>
                 <td class="p-4 text-center">-</td>
-                <td class="p-4 text-center text-green-600">✓</td>
+                <td class="p-4 text-center text-green-600 text-xl">🐟</td>
               </tr>
             </tbody>
           </table>
