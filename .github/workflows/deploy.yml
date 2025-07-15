@@ -1,32 +1,36 @@
-name: Deploy to Deno Deploy
-
+name: Deploy
 on:
   push:
-    branches: [main]
-
-permissions:
-  id-token: write
-  contents: read
+    branches: main
+  pull_request:
+    branches: main
 
 jobs:
   deploy:
+    name: Deploy
     runs-on: ubuntu-latest
+
+    permissions:
+      id-token: write # Needed for auth with Deno Deploy
+      contents: read # Needed to clone the repository
+
     steps:
-      - name: Checkout with LFS
+      - name: Clone repository
         uses: actions/checkout@v4
-        with:
-          lfs: true
 
-      - name: Setup Deno
-        uses: denoland/setup-deno@v1
+      - name: Install Deno
+        uses: denoland/setup-deno@v2
         with:
-          deno-version: v1.x
+          deno-version: v2.x
 
-      - name: Deploy to Deno Deploy
+      - name: Build step
+        run: "deno task build"
+
+      - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
           project: "tunny-docs"
-          entrypoint: "./main.ts"
+          entrypoint: "main.ts"
           root: "."
-        env:
-          DENO_DEPLOY_TOKEN: ${{ secrets.DENO_DEPLOY_TOKEN }}
+          
+          
