@@ -71,15 +71,14 @@ function LicenseComparison() {
                 <th class="text-left p-4 font-semibold">Feature</th>
                 <th class="text-center p-4 font-semibold">Community</th>
                 <th class="text-center p-4 font-semibold">Trial</th>
-                <th class="text-center p-4 font-semibold">
-                  Professional / Educational
-                </th>
+                <th class="text-center p-4 font-semibold">Professional</th>
+                <th class="text-center p-4 font-semibold"> Educational</th>
               </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
               <tr class="bg-gray-50">
-                <td class="p-4 font-semibold text-gray-900" colspan="4">
-                  License Requirements
+                <td class="p-4 font-semibold text-gray-900" colspan="5">
+                  🐠 License Type
                 </td>
               </tr>
               <tr>
@@ -87,89 +86,46 @@ function LicenseComparison() {
                 <td class="p-4 text-center">-</td>
                 <td class="p-4 text-center text-green-600 text-xl">🐟</td>
                 <td class="p-4 text-center text-green-600 text-xl">🐟</td>
+                <td class="p-4 text-center text-green-600 text-xl">🐟</td>
               </tr>
               <tr>
-                <td class="p-4 text-gray-700">Need Subscription</td>
+                <td class="p-4 text-gray-700">Need Paid License</td>
                 <td class="p-4 text-center">-</td>
                 <td class="p-4 text-center">-</td>
                 <td class="p-4 text-center text-green-600 text-xl">🐟</td>
+                <td class="p-4 text-center text-green-600 text-xl">🐟</td>
+              </tr>
+              <tr>
+                <td class="p-4 text-gray-700">Commercial Use</td>
+                <td class="p-4 text-center">-</td>
+                <td class="p-4 text-center">-</td>
+                <td class="p-4 text-center text-green-600 text-xl">🐟</td>
+                <td class="p-4 text-center">-</td>
               </tr>
 
               <tr class="bg-gray-50">
-                <td class="p-4 font-semibold text-gray-900" colspan="4">
-                  Single-Objective Optimization
+                <td class="p-4 font-semibold text-gray-900" colspan="5">
+                  🐳 Optimization
                 </td>
               </tr>
               <tr>
-                <td class="p-4 text-gray-700">TPE</td>
+                <td class="p-4 text-gray-700">Basic Algorithms</td>
                 <td class="p-4 text-center text-green-600 text-xl">🐟</td>
                 <td class="p-4 text-center text-green-600 text-xl">🐟</td>
-                <td class="p-4 text-center text-green-600 text-xl">🐟</td>
-              </tr>
-              <tr>
-                <td class="p-4 text-gray-700">cTPE</td>
-                <td class="p-4 text-center">-</td>
                 <td class="p-4 text-center text-green-600 text-xl">🐟</td>
                 <td class="p-4 text-center text-green-600 text-xl">🐟</td>
               </tr>
               <tr>
-                <td class="p-4 text-gray-700">GP: Optuna & BoTorch</td>
+                <td class="p-4 text-gray-700">Advanced Algorithms</td>
                 <td class="p-4 text-center">-</td>
                 <td class="p-4 text-center text-green-600 text-xl">🐟</td>
-                <td class="p-4 text-center text-green-600 text-xl">🐟</td>
-              </tr>
-              <tr>
-                <td class="p-4 text-gray-700">HEBO</td>
-                <td class="p-4 text-center">-</td>
                 <td class="p-4 text-center text-green-600 text-xl">🐟</td>
                 <td class="p-4 text-center text-green-600 text-xl">🐟</td>
               </tr>
 
               <tr class="bg-gray-50">
-                <td class="p-4 font-semibold text-gray-900" colspan="4">
-                  Multi-Objective Optimization
-                </td>
-              </tr>
-              <tr>
-                <td class="p-4 text-gray-700">NSGA-II</td>
-                <td class="p-4 text-center text-green-600 text-xl">🐟</td>
-                <td class="p-4 text-center text-green-600 text-xl">🐟</td>
-                <td class="p-4 text-center text-green-600 text-xl">🐟</td>
-              </tr>
-              <tr>
-                <td class="p-4 text-gray-700">NSGA-III, MOEA/D, DE</td>
-                <td class="p-4 text-center">-</td>
-                <td class="p-4 text-center text-green-600 text-xl">🐟</td>
-                <td class="p-4 text-center text-green-600 text-xl">🐟</td>
-              </tr>
-
-              <tr class="bg-gray-50">
-                <td class="p-4 font-semibold text-gray-900" colspan="4">
-                  Advanced Algorithms
-                </td>
-              </tr>
-              <tr>
-                <td class="p-4 text-gray-700">CMA-ES & MO-CMA-ES</td>
-                <td class="p-4 text-center">-</td>
-                <td class="p-4 text-center text-green-600 text-xl">🐟</td>
-                <td class="p-4 text-center text-green-600 text-xl">🐟</td>
-              </tr>
-              <tr>
-                <td class="p-4 text-gray-700">QMC Sampling</td>
-                <td class="p-4 text-center">-</td>
-                <td class="p-4 text-center text-green-600 text-xl">🐟</td>
-                <td class="p-4 text-center text-green-600 text-xl">🐟</td>
-              </tr>
-              <tr>
-                <td class="p-4 text-gray-700">Preferential GP</td>
-                <td class="p-4 text-center">-</td>
-                <td class="p-4 text-center text-green-600 text-xl">🐟</td>
-                <td class="p-4 text-center text-green-600 text-xl">🐟</td>
-              </tr>
-
-              <tr class="bg-gray-50">
-                <td class="p-4 font-semibold text-gray-900" colspan="4">
-                  Support
+                <td class="p-4 font-semibold text-gray-900" colspan="5">
+                  🐡 Support
                 </td>
               </tr>
               <tr>
@@ -177,12 +133,14 @@ function LicenseComparison() {
                 <td class="p-4 text-center text-green-600 text-xl">🐟</td>
                 <td class="p-4 text-center text-green-600 text-xl">🐟</td>
                 <td class="p-4 text-center text-green-600 text-xl">🐟</td>
+                <td class="p-4 text-center text-green-600 text-xl">🐟</td>
               </tr>
               <tr>
-                <td class="p-4 text-gray-700">Email Support</td>
+                <td class="p-4 text-gray-700">Email Support<br />(Limited number of times)</td>
                 <td class="p-4 text-center">-</td>
                 <td class="p-4 text-center">-</td>
                 <td class="p-4 text-center text-green-600 text-xl">🐟</td>
+                <td class="p-4 text-center">-</td>
               </tr>
             </tbody>
           </table>
