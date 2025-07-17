@@ -93,7 +93,9 @@ export default function PurchaseSection() {
                 <div class="text-sm text-gray-500">/month</div>
                 <div class="text-lg font-bold text-green-600 mt-2">$xx</div>
                 <div class="text-sm text-gray-500">/year</div>
-                <div class="text-xs text-green-600 font-medium">(Save 2 month)</div>
+                <div class="text-xs text-green-600 font-medium">
+                  (Save 2 month)
+                </div>
               </div>
               <ul class="text-gray-600 mb-6 space-y-2">
                 <li>✓ All Trial features</li>

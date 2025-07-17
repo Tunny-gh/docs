@@ -72,7 +72,7 @@ function LicenseComparison() {
                 <th class="text-center p-4 font-semibold">Community</th>
                 <th class="text-center p-4 font-semibold">Trial</th>
                 <th class="text-center p-4 font-semibold">Professional</th>
-                <th class="text-center p-4 font-semibold"> Educational</th>
+                <th class="text-center p-4 font-semibold">Educational</th>
               </tr>
             </thead>
             <tbody class="divide-y divide-gray-200">
@@ -136,7 +136,9 @@ function LicenseComparison() {
                 <td class="p-4 text-center text-green-600 text-xl">🐟</td>
               </tr>
               <tr>
-                <td class="p-4 text-gray-700">Email Support<br />(Limited number of times)</td>
+                <td class="p-4 text-gray-700">
+                  Email Support<br />(Limited number of times)
+                </td>
                 <td class="p-4 text-center">-</td>
                 <td class="p-4 text-center">-</td>
                 <td class="p-4 text-center text-green-600 text-xl">🐟</td>

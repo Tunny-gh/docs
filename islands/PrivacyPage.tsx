@@ -43,13 +43,19 @@ export default function PrivacyPage() {
           );
         } else if (line.startsWith("## ")) {
           return (
-            <h2 key={index} class="text-2xl font-semibold mb-4 mt-6 text-gray-800">
+            <h2
+              key={index}
+              class="text-2xl font-semibold mb-4 mt-6 text-gray-800"
+            >
               {line.substring(3)}
             </h2>
           );
         } else if (line.startsWith("### ")) {
           return (
-            <h3 key={index} class="text-xl font-semibold mb-3 mt-5 text-gray-700">
+            <h3
+              key={index}
+              class="text-xl font-semibold mb-3 mt-5 text-gray-700"
+            >
               {line.substring(4)}
             </h3>
           );
@@ -108,19 +114,21 @@ export default function PrivacyPage() {
           </div>
 
           <div class="px-6 py-8">
-            {isLoading ? (
-              <div class="flex justify-center items-center py-12">
-                <div class="text-gray-500">
-                  {language === "ja" ? "読み込み中..." : "Loading..."}
+            {isLoading
+              ? (
+                <div class="flex justify-center items-center py-12">
+                  <div class="text-gray-500">
+                    {language === "ja" ? "読み込み中..." : "Loading..."}
+                  </div>
                 </div>
-              </div>
-            ) : (
-              <div class="prose prose-lg max-w-none">
-                <div class="space-y-4">
-                  {renderMarkdown(privacyContent)}
+              )
+              : (
+                <div class="prose prose-lg max-w-none">
+                  <div class="space-y-4">
+                    {renderMarkdown(privacyContent)}
+                  </div>
                 </div>
-              </div>
-            )}
+              )}
           </div>
         </div>
       </div>
