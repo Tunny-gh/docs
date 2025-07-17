@@ -32,5 +32,3 @@ jobs:
           project: "tunny-docs"
           entrypoint: "main.ts"
           root: "."
-          
-          

@@ -10,9 +10,11 @@ import * as $docs_v1_slug_ from "./routes/docs_v1/[...slug].tsx";
 import * as $faqs_slug_ from "./routes/faqs/[...slug].tsx";
 import * as $gfm_css from "./routes/gfm.css.ts";
 import * as $index from "./routes/index.tsx";
+import * as $privacy from "./routes/privacy.tsx";
 import * as $purchase from "./routes/purchase.tsx";
 import * as $raw from "./routes/raw.ts";
 import * as $LemonDrop from "./islands/LemonDrop.tsx";
+import * as $PrivacyPage from "./islands/PrivacyPage.tsx";
 import * as $PurchaseSection from "./islands/PurchaseSection.tsx";
 import type { Manifest } from "$fresh/server.ts";
 
@@ -26,11 +28,13 @@ const manifest = {
     "./routes/faqs/[...slug].tsx": $faqs_slug_,
     "./routes/gfm.css.ts": $gfm_css,
     "./routes/index.tsx": $index,
+    "./routes/privacy.tsx": $privacy,
     "./routes/purchase.tsx": $purchase,
     "./routes/raw.ts": $raw,
   },
   islands: {
     "./islands/LemonDrop.tsx": $LemonDrop,
+    "./islands/PrivacyPage.tsx": $PrivacyPage,
     "./islands/PurchaseSection.tsx": $PurchaseSection,
   },
   baseUrl: import.meta.url,
