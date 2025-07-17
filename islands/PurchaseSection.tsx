@@ -13,9 +13,11 @@ export default function PurchaseSection() {
   >(null);
 
   const stripeUrls = {
-    trial: "https://buy.stripe.com/your-trial-url",
     professionalMonthly: "https://buy.stripe.com/your-professional-monthly-url",
     professionalYearly: "https://buy.stripe.com/your-professional-yearly-url",
+  };
+  const formUrls = {
+    trial: "https://forms.gle/5bRK7UKcH532v9vv6",
     educational: "https://buy.stripe.com/your-educational-url",
   };
 
@@ -51,8 +53,7 @@ export default function PurchaseSection() {
               <h3 class="text-2xl font-bold text-gray-900 mb-4">Community</h3>
               <div class="text-3xl font-bold text-green-600 mb-4">Free</div>
               <ul class="text-gray-600 mb-6 space-y-2">
-                <li>✓ Basic TPE optimization</li>
-                <li>✓ NSGA-II multi-objective</li>
+                <li>✓ Basic optimization algorithms</li>
                 <li>✓ Random & BruteForce</li>
                 <li>✓ Forum support</li>
               </ul>
@@ -71,14 +72,13 @@ export default function PurchaseSection() {
               <ul class="text-gray-600 mb-6 space-y-2">
                 <li>✓ All Community features</li>
                 <li>✓ Advanced algorithms</li>
-                <li>✓ Constrained optimization</li>
                 <li>✓ 30-day trial period</li>
               </ul>
               <button
-                onClick={() => handlePurchaseClick("Trial", stripeUrls.trial)}
+                onClick={() => handlePurchaseClick("Trial", formUrls.trial)}
                 class="block w-full bg-blue-500 hover:bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold transition-colors"
               >
-                Start Free Trial
+                Apply Trial
               </button>
             </div>
 
@@ -95,12 +95,11 @@ export default function PurchaseSection() {
                 <div class="text-sm text-gray-500">/month</div>
                 <div class="text-lg font-bold text-green-600 mt-2">$xx</div>
                 <div class="text-sm text-gray-500">/year</div>
-                <div class="text-xs text-green-600 font-medium">(Save 17%)</div>
+                <div class="text-xs text-green-600 font-medium">(Save 2 month)</div>
               </div>
               <ul class="text-gray-600 mb-6 space-y-2">
                 <li>✓ All Trial features</li>
                 <li>✓ Commercial use</li>
-                <li>✓ Priority email support</li>
               </ul>
               <div class="space-y-2">
                 <button
@@ -139,7 +138,7 @@ export default function PurchaseSection() {
               </ul>
               <button
                 onClick={() =>
-                  handlePurchaseClick("Educational", stripeUrls.educational)}
+                  handlePurchaseClick("Educational", formUrls.educational)}
                 class="block w-full bg-purple-500 hover:bg-purple-600 text-white py-3 px-6 rounded-lg font-semibold transition-colors"
               >
                 Buy Educational
